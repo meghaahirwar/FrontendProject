@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="LoginPage.css">
+    <script type="text/javascript" src="LoginPage.js"></script>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.tr6X5rCKo_NQqqpGlJTFvQHaGd?pid=ImgDet&w=1005&h=876&rs=1">
+
+</head>
+<body >
+<div class="form-container">
+<div class="heading"><h3 title="User your credential and go  to your account">Connect with use by using credential</h3></div>
+<hr>
+        <center><img src="User.png"></center>
+        <form  name="form" id="form" onsubmit="validateForm()">
+            <div class="input">
+                <input type="text" title="Enter your username" placeholder="USER NAME" id="username"><br>
+                    <p id="userError" class="error"></p>
+                     <input title="Enter your password" type="password" placeholder="PASSWORD" id="password"><br>
+                     <p id="passError" class="error"></p>
+                     <input type="checkbox" style="width: 18px; box-shadow: none; " checked="checked"> Remember me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                     <a href="registrationform.html">Forget Password</a><br><BR>
+                     <button type="submit" id="submit">LOGIN</button><br>            
+                     <p class="message">Not registered? <a href="RegistrationPage.html">Create an account</a></p>
+            </div>
+        </form>
+</div>
+<footer><div >© copyright astoriasolutions.com</div>
+  </footer>
+</body>
+</html>

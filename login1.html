@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+    <script type="text/javascript" src="LoginPage.js"></script>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.tr6X5rCKo_NQqqpGlJTFvQHaGd?pid=ImgDet&w=1005&h=876&rs=1">
+
+    <style>
+        body {
+           background-image: url("4.png");
+        }
+        .form-container{
+            
+            border-radius: 12px;
+            height: 100%;
+            width: 30%;
+            padding: 10px;
+            margin-top: 0%;
+            margin-left: 33%;
+            margin-right: 30%;
+            background-color: blanchedalmond; 
+        }
+        input{
+            box-shadow: 6px 4px 8px;
+            border: none;
+            border-radius: 10px;
+            width: 250px;
+            margin: 5px 0px;
+            padding: 15px;
+        
+        }
+        button{
+            width: 280px;
+            background-color: rgb(49, 48, 48);
+            color: white;
+            border: 0px;
+            padding: 15px;
+            border-radius: 10px;
+        
+        }
+        
+        .input{
+            align-items: center;
+            padding-left: 50px;
+        }
+        
+        .message{
+            padding-top: 10px;
+            align-self: center;
+            padding-left: 25px;
+        }
+        .heading{
+            padding-left: 10px;
+        }
+        
+        img{
+            margin-top: 50px;
+            height: 200px;
+            width: 180px;
+        }
+        
+     </style>
+</head>
+<body >
+<div class="form-container">
+<div class="heading"><h3>Connect with use by using credential</h3></div>
+        <center><img src="User.png"></center>
+        <form  name="form" id="form" onsubmit="validateForm()">
+            <div class="input">
+                <input type="text" placeholder="USER NAME" id="username"><br>
+                    <p id="userError" class="error"></p>
+                     <input type="password" placeholder="PASSWORD" id="password"><br>
+                     <p id="passError" class="error"></p>
+                     <input type="checkbox" style="width: 18px; box-shadow: none; " checked="checked"> Remember me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="registrationform.html">Forget Password</a><br><BR>
+                     <button type="submit" id="submit">LOGIN</button><br>            
+                     <p class="message">Not registered? <a href="RegistrationPage.html">Create an account</a></p>
+            </div>
+        </form>
+</div>
+    
+</body>
+</html>
